@@ -1,0 +1,428 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La nascita della Costituzione Italiana - Contatti</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/set1.css" />
+    <link href="css/overwrite.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <title>La Costituzione italiana - ITT Chilesotti Thiene</title>
+    <style>
+        li,
+        li>div,
+        li>div::before,
+        li>div::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*
+                body {
+                    font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+                    background: #3a3a3a;
+                    color: #fff;
+                    overflow-x: hidden;
+                    padding-bottom: 50px;
+                    align: center;
+                }*/
+        /* INTRO SECTION ––––––––––––––––––––––––––––––––––––––––––––– */
+
+        .intro {
+            background: white;
+            /*#8d8a85;*/
+            padding: 0.625em 0;
+            margin: 0;
+            position: relative;
+        }
+        /*
+                .container {
+                    width: 90%;
+                    max-width: 960px;
+                    margin: 0 auto;
+                    text-align: center;
+                    position: relative;
+                }
+
+                h1 {
+                    font-size: 2.5rem;
+                }*/
+        /* TIMELINE –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+        .timeline ul {
+            background: white;
+            padding: 0px 0;
+            margin-top: 0px;
+        }
+
+        .timeline ul li {
+            list-style-type: none;
+            position: relative;
+            width: 12px;
+            margin: 0 auto;
+            padding-top: 0.625em;
+            background: #282119;
+            ;
+        }
+
+        .timeline ul li::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 10;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: inherit;
+        }
+
+        .timeline ul li div {
+            position: relative;
+            bottom: 0;
+            width: 400px;
+            padding: 15px;
+            background: #3a3a3a;
+            /*#282119;*/
+        }
+
+        .timeline ul li div::before {
+            content: '';
+            position: absolute;
+            bottom: 7px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+
+
+        .timeline li time {
+            color: inherit;
+        }
+
+        .timeline li {
+            color: #ebebeb;
+        }
+
+        .timeline ul li:nth-child(odd) div {
+            top: 33px;
+            left: 45px;
+        }
+
+        .btn-default:hover,
+        .btn-default:focus,
+        .btn-default.focus,
+        .btn-default:active,
+        .btn-default.active,
+        .open>.dropdown-toggle.btn-default {
+            color: #333!important;
+            background-color: #b4b4b4!important;
+            border-color: #b4b4b4;
+        }
+
+        .btn-default:nth-child(odd):hover::before,
+        .btn-default:nth-child(odd):focus::before,
+        .btn-default:nth-child(odd).focus::before,
+        .btn-default:nth-child(odd):active::before,
+        .btn-default.active:nth-child(odd)::before,
+        .open>.dropdown-toggle.btn-default {
+            color: #e6e6e6!important;
+            border-color: transparent #b4b4b4 transparent transparent!important;
+        }
+
+        .btn-default:nth-child(odd):hover::after,
+        .btn-default:nth-child(odd):focus::after,
+        .btn-default:nth-child(odd).focus::after,
+        .btn-default:nth-child(odd):active::after,
+        .btn-default.active:nth-child(odd)::after,
+        .open>.dropdown-toggle.btn-default {
+            color: #e6e6e6!important;
+            border-color: transparent #b4b4b4 transparent transparent!important;
+        }
+
+        .timeline ul li:nth-child(odd) div::before {
+            left: -15px;
+            border-width: 8px 16px 8px 0;
+            border-color: transparent #3a3a3a transparent transparent;
+        }
+
+        .timeline ul li:nth-child(even) div {
+            top: 33px;
+            left: -439px;
+        }
+
+        .timeline ul li:nth-child(even) div::before {
+            right: -15px;
+            border-width: 8px 0 8px 16px;
+            border-color: transparent transparent transparent #3a3a3a;
+        }
+
+        time {
+            display: block;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            position: relative;
+        }
+        /* EFFECTS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+        .timeline ul li::after {
+            transition: background .5s ease-in-out;
+        }
+
+        .timeline ul li.in-view::after {
+            background: #282119;
+        }
+
+        .timeline ul li div {
+            visibility: hidden;
+            opacity: 0;
+            transition: all .5s ease-in-out;
+        }
+
+        .timeline ul li:nth-child(odd) div {
+            transform: translate3d(200px, 0, 0);
+        }
+
+        .timeline ul li:nth-child(even) div {
+            transform: translate3d(-200px, 0, 0);
+        }
+
+        .timeline ul li.in-view div {
+            transform: none;
+            visibility: visible;
+            opacity: 1;
+        }
+        /* GENERAL MEDIA QUERIES
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+        @media screen and (max-width: 900px) {
+            .timeline ul li div {
+                width: 250px;
+            }
+
+            .timeline ul li:nth-child(even) div {
+                left: -289px;
+                /*250+45-6*/
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .timeline ul li {
+                margin-left: 20px;
+            }
+
+            .timeline ul li div {
+                width: calc(100vw - 91px);
+            }
+
+            .timeline ul li:nth-child(even) div {
+                left: 45px;
+            }
+
+            .timeline ul li:nth-child(even) div::before {
+                left: -15px;
+                border-width: 8px 16px 8px 0;
+                border-color: transparent #3a3a3a transparent transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#282119;opacity:0.9;" role="navigation" id="navbar">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <span>
+                        <img src="img/logo.png" width="50px" style="margin-bottom:0.625em" /> Nascita della Costituzione Italiana</span>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <div class="menu">
+                    <ul class="nav nav-tabs" role="tablist" style="margin-top:9px;font-size:90%;">
+                        <!--		<li role="presentation" class="active">
+											<a href="index.html">Home</a>
+										</li role="presentation"> -->
+                        <li role="presentation">
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-bottom:4%">Home
+                                    <a class="caret"></a>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="chisiamo.html">Chi Siamo</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contatti</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="dropdown">
+                                <a class="btn btn-primary" role="button" href="resistenza.html" style="margin-bottom:4%">Gli Anni Della Resistenza
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="dropdown">
+                                <a class="btn btn-primary active" role="button" href="referendum.html" style="margin-bottom:4%">Dalla Fine della guerra al Referendum
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-bottom:4%">Assemblea costituente
+                                    <a class="caret"></a>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li role="presentation">
+                                        <a href="assemblea.html">Introduzione</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="emiciclo.html">Emiciclo</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="dibattito.html">Dibattito Costituzione</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="articoli.html">Articoli Proposti</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="famiglia.html">Famiglia</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="religione.html">Religione</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="istruzione.html">Istruzione</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Da qui -->
+    <div class="container-fluid" style="margin-top:12em;margin-bottom:6em;">
+        <div class="timeline wow fadeIn" data-wow-offset="0" data-wow-delay="0.2s">
+            <h1 style="text-align:center;">Governi nazionali fino al referendum</h1>
+            <hr style="background-color:#282119;margin-bottom:0px;padding-bottom:0px;height:5px;">
+            <div class="timeline wow fadeIn" data-wow-offset="0" data-wow-delay="0.2s">
+                <ul>
+                    <li class="in-view">
+                        <div class="btn-default wow fadeIn" data-wow-offset="1" data-wow-delay="0.3s" onclick="location.href='PrimoGovBadoglio.html';">
+                            <time>25 luglio 1943 - 21 aprile 1944</time> Primo Governo Badoglio
+                        </div>
+                    </li>
+                    <li class="in-view">
+                        <div class="btn-default wow fadeIn" data-wow-offset="2" data-wow-delay="0.3s" onclick="location.href='SecondoGovBadoglio.html';">
+                            <time>22 aprile 1944 - 17 giugno 1944</time> Secondo Governo Badoglio
+                        </div>
+                    </li>
+                    <li class="in-view">
+                        <div class="btn-default wow fadeIn" data-wow-offset="3" data-wow-delay="0.3s" onclick="location.href='PrimoGovBonomi.html';">
+                            <time>18 giugno 1944 - 11 dicembre 1944</time> Primo Governo Bonomi
+                        </div>
+                    </li>
+                    <li class="in-view">
+                        <div class="btn-default wow fadeIn" data-wow-offset="4" data-wow-delay="0.3s" onclick="location.href='SecondoGovBonomi.html';">
+                            <time>12 dicembre 1944 - 20 giugno 1945</time> Secondo Governo Bonomi
+                        </div>
+                    </li>
+                    <li class="in-view">
+                        <div class="btn-default wow fadeIn" data-wow-offset="5" data-wow-delay="0.3s" onclick="location.href='PrimoGovParri.html';">
+                            <time>21 giugno 1945 - 9 dicembre 1945</time> Primo Governo Parri
+                        </div>
+                    </li>
+                    <li class="in-view">
+                        <div class="btn-default wow fadeIn" data-wow-offset="6" data-wow-delay="0.3s" onclick="location.href='PrimoGovDeGasperi.html';">
+                            <time>10 dicembre 1945 - 12 luglio 1946</time> Primo Governo De Gasperi
+                        </div>
+                    </li>
+                    <li class="in-view">
+                        <div class="btn-default wow fadeIn" data-wow-offset="7" data-wow-delay="0.3s" onclick="location.href='SecondoGovDeGasperi.html';">
+                            <time>13 luglio 1946 - 1 febbraio 1947</time> Secondo Governo De Gasperi
+                        </div>
+                    </li>
+                    <li class="in-view">
+                        <div class="btn-default wow fadeIn" data-wow-offset="8" data-wow-delay="0.3s" onclick="location.href='TerzoGovDeGasperi.html';">
+                            <time>2 febbraio 1947 - 30 maggio 1947</time> Terzo Governo De Gasperi
+                        </div>
+                    </li>
+                    <li class="in-view">
+                        <div class="btn-default wow fadeIn" data-wow-offset="9" data-wow-delay="0.3s" onclick="location.href='QuartoGovDeGasperi.html';">
+                            <time>31 maggio 1947 - 22 maggio 1948</time> Quarto Governo De Gasperi
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="navbar navbar-fixed-bottom" style="opacity:0.9;">
+            <div class="last-div" style="font-size:90%;">
+                <div class='col-md-12' style="text-align:right">
+                    <a style="color:#b4b4b4"> ITT Chilesotti &emsp; </a>
+                    <a style="color:#b4b4b4"> Via Dei Tigli, 10 - 36016 Thiene &emsp; </a>
+                    <a style="color:#b4b4b4"> Tel 0445 361773 &emsp;</a>
+                    <a style="color:#b4b4b4"> E-mail: itt@chilesotti.it &emsp; </a>
+                    <a style="color:#b4b4b4"> PEC: vitf06000A@pec.istruzione.it &emsp;</a>
+                </div>
+            </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/fliplightbox.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script type="text/javascript">
+        $('.portfolio').flipLightBox()
+    </script>
+</body>
+
+</html>
