@@ -1,21 +1,21 @@
 <html lang="it">
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-	<title>La Nascita della Costituzione Italiana - Partito Comunista Italiano</title>
-	<!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/jquery.bxslider.css">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="css/demo.css" />
-	<link rel="stylesheet" type="text/css" href="css/set1.css" />
-	<link href="css/overwrite.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <title>La Nascita della Costituzione Italiana - Partito Comunista Italiano</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/set1.css" />
+    <link href="css/overwrite.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
@@ -23,238 +23,170 @@
 </head>
 
 <body>
-		<nav class="navbar navbar-default navbar-fixed-top" style="background-color:#282119;opacity:0.9;" role="navigation" id="navbar">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="index.html">
-							<span>
-								<img src="img/logo.png" width="50px" style="margin-bottom:10px" /> Nascita della Costituzione Italiana</span>
-						</a>
-					</div>
-					<div class="navbar-collapse collapse">
-						<div class="menu">
-							<ul class="nav nav-tabs" role="tablist" style="margin-top:9px;font-size:90%;">
-								<!--		<li role="presentation" class="active">
-											<a href="index.html">Home</a>
-										</li role="presentation"> -->
-								<li role="presentation" class="active">
-									<div class="dropdown">
-										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-bottom:4%">Home
-											<a class="caret"></a>
-										</button>
-										<ul class="dropdown-menu">
-											<li>
-												<a href="index.html">Home</a>
-											</li>
-											<li>
-												<a href="chisiamo.html">Chi Siamo</a>
-											</li>
-											<li>
-												<a href="contact.html">Contatti</a>
-											</li>
-										</ul>
-									</div>
-								</li>
-		
-								<li>
-									<div class="dropdown">
-										<a class="btn btn-primary active" role="button" href="resistenza.html" style="margin-bottom:4%">Gli Anni Della Resistenza
-										</a>
-									</div>
-								</li>
-		
-								<li>
-									<div class="dropdown">
-										<a class="btn btn-primary" role="button" href="referendum.html" style="margin-bottom:4%">Dalla Fine della guerra al Referendum
-										</a>
-									</div>
-								</li>
-		
-								<li>
-									<div class="dropdown">
-										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-bottom:4%">Assemblea costituente
-											<a class="caret"></a>
-										</button>
-										<ul class="dropdown-menu">
-												<li role="presentation">
-													<a href="assemblea.html">Introduzione</a>
-												</li>
-												<li role="presentation">
-													<a href="emiciclo.html">Emiciclo</a>
-												</li>
-												<li role="presentation">
-													<a href="dibattito.html">Dibattito Costituzione</a>
-												</li>
-												<li role="presentation">
-													<a href="articoli.html">Articoli Proposti</a>
-												</li>
-												<li role="presentation">
-													<a href="famiglia.html">Famiglia</a>
-												</li>
-												<li role="presentation">
-													<a href="religione.html">Religione</a>
-												</li>
-												<li role="presentation">
-													<a href="istruzione.html">Istruzione</a>
-												</li>
-											</ul>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</nav>
-	<div class="container" style="margin-top:11em;margin-bottom:5em">
-		<div class="box">
-				<h1 align=center color=#FF4000> Il partito d'Azione Italiano </h1>
-			<img src="img/PartitoAzione.jpg" alt="Stemma del Partito Comunista Italiano">
-		</div>
+    <div id="include"></div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        var includeDiv = $("#include");
+        includeDiv.load('navbar.html');
+    </script>
+    <div class="container" style="margin-top:11em;margin-bottom:5em">
+        <div class="box">
+            <h1 align=center color=#FF4000> Il partito d'Azione Italiano </h1>
+            <img src="img/PartitoAzione.jpg" alt="Stemma del Partito Comunista Italiano">
+        </div>
 
 
-		<div class="wow fadein" data-wow-offset="0" data-wow-delay="0.4s">
-				<p>Il Partito d'Azione nasce clandestinamente il 4 giugno del 1942 dall'incontro tra gruppi repubblicani e liberal-socialisti. Rappresenta l'organizzazione politica a cui fanno riferimento i combattenti partigiani di Giustizia e Libertà, movimento fondato a Parigi nell'agosto del 1929 da un gruppo di esuli antifascisti. Costoro avevano svolto un'importante funzione di informazione e sensibilizzazione nei confronti dell'opinione pubblica internazionale, svelando la realtà dell'Italia fascista che si nascondeva dietro la propaganda di regime.</p>
-				<p>Il nome, proposto da Mario Vinciguerra, deriva da quello del movimento fondato da Giuseppe Mazzini nel 1853.</p>
-				<p>Tra il '41 e il '42 viene redatto a Bologna il primo piano programmatico del Partito d'Azione, costituito dai cosiddetti <em>Sette Punti</em>.</p>
-				<p>Nel corso della guerra il Pd'A si suddivide in più centri e questo rende indispensabile la nascita di un giornale clandestino, intitolato <em>Italia Libera</em>, quale riferimento comune per le sezioni.</p>
-				<p>La pubblicazione dei <em>Sette Punti</em> sul primo numero del giornale accende il dibattito tra le varie posizioni provocando alcuni contrasti tra le correnti liberal-democratiche, liberal-socialiste e antifasciste di Giustizia e Libertà, contrasti che probabilmente sono il sintomo di una scarsa coesione ideologica all'interno del partito.</p>
-				<p>I <em>Sette Punti</em> prevedono: l'abbattimento del fascismo, la formazione di uno stato laico e repubblicano, la riforma agraria, amministrativa e delle autonomie locali e, sul piano internazionale, la nascita di una federazione europea di stati.</p>
-				<p>Il partito, ostile al governo Badoglio nel periodo dal 25 luglio all'8 settembre 1943, già nel suo primo incontro nazionale (Firenze, sett. '43) mostra le diversità di impostazione tra l'ala socialista di Emilio Lussu e quella radical-democratica di Ferruccio Parri e Ugo La Malfa, più sensibile agli interessi dei ceti medi. Il convegno elegge Parri responsabile militare per il Nord, mentre al Sud nasce un esecutivo meridionale.</p>
-				<p>Finita la guerra, il Pd'A partecipa alle trattative per la nascita di un governo d'unità nazionale che guidi la ricostruzione democratica ed economica dell'Italia. Aderisce quindi al governo Bonomi e nel giugno del 1945 ottiene la Presidenza del Consiglio con Ferruccio Parri.</p>
-				<p>È questo il momento di massimo consenso e potere per il Partito d'Azione, ma con la caduta del governo Parri, dopo cinque mesi, inizia l'inesorabile declino.</p>
-				<h2><center><em>I SETTE PUNTI</em></center></h2>
-				<em><p>1. - La prolungata abdicazione degli istituti monarchici - corresponsabili con il fascismo della rovina del Paese - legittima la inderogabile esigenza di un regime repubblicano, nel quale le libertà civili e politiche dovranno essere affermate e difese con il presidio di tutte le misure atte ad impedire che esse possano diventare strumento di partiti e di gruppi, che della libertà si avvalgano con il proposito di distruggerla. In base ad una rinnovata separazione dei poteri, il Potere Esecutivo - assiduamente e permanentemente controllato dagli organi rappresentativi che dello Stato repubblicano saranno il fondamento - dovrà godere di autorità e stabilità tali da consentire continuità, efficacia e speditezza di azione, per evitare ogni ritorno a sistemi di crisi permanente, risultati fatali ai regimi parlamentari. Il Potere Giudiziario avrà garanzia di piena indipendenza.</p>
+        <div class="wow fadein" data-wow-offset="0" data-wow-delay="0.4s">
+            <p>Il Partito d'Azione nasce clandestinamente il 4 giugno del 1942 dall'incontro tra gruppi repubblicani e liberal-socialisti. Rappresenta l'organizzazione politica a cui fanno riferimento i combattenti partigiani di Giustizia e Libertà, movimento
+                fondato a Parigi nell'agosto del 1929 da un gruppo di esuli antifascisti. Costoro avevano svolto un'importante funzione di informazione e sensibilizzazione nei confronti dell'opinione pubblica internazionale, svelando la realtà dell'Italia
+                fascista che si nascondeva dietro la propaganda di regime.</p>
+            <p>Il nome, proposto da Mario Vinciguerra, deriva da quello del movimento fondato da Giuseppe Mazzini nel 1853.</p>
+            <p>Tra il '41 e il '42 viene redatto a Bologna il primo piano programmatico del Partito d'Azione, costituito dai cosiddetti <em>Sette Punti</em>.</p>
+            <p>Nel corso della guerra il Pd'A si suddivide in più centri e questo rende indispensabile la nascita di un giornale clandestino, intitolato <em>Italia Libera</em>, quale riferimento comune per le sezioni.</p>
+            <p>La pubblicazione dei <em>Sette Punti</em> sul primo numero del giornale accende il dibattito tra le varie posizioni provocando alcuni contrasti tra le correnti liberal-democratiche, liberal-socialiste e antifasciste di Giustizia e Libertà,
+                contrasti che probabilmente sono il sintomo di una scarsa coesione ideologica all'interno del partito.</p>
+            <p>I <em>Sette Punti</em> prevedono: l'abbattimento del fascismo, la formazione di uno stato laico e repubblicano, la riforma agraria, amministrativa e delle autonomie locali e, sul piano internazionale, la nascita di una federazione europea
+                di stati.</p>
+            <p>Il partito, ostile al governo Badoglio nel periodo dal 25 luglio all'8 settembre 1943, già nel suo primo incontro nazionale (Firenze, sett. '43) mostra le diversità di impostazione tra l'ala socialista di Emilio Lussu e quella radical-democratica
+                di Ferruccio Parri e Ugo La Malfa, più sensibile agli interessi dei ceti medi. Il convegno elegge Parri responsabile militare per il Nord, mentre al Sud nasce un esecutivo meridionale.</p>
+            <p>Finita la guerra, il Pd'A partecipa alle trattative per la nascita di un governo d'unità nazionale che guidi la ricostruzione democratica ed economica dell'Italia. Aderisce quindi al governo Bonomi e nel giugno del 1945 ottiene la Presidenza
+                del Consiglio con Ferruccio Parri.</p>
+            <p>È questo il momento di massimo consenso e potere per il Partito d'Azione, ma con la caduta del governo Parri, dopo cinque mesi, inizia l'inesorabile declino.</p>
+            <h2>
+                <center><em>I SETTE PUNTI</em></center>
+            </h2>
+            <em><p>1. - La prolungata abdicazione degli istituti monarchici - corresponsabili con il fascismo della rovina del Paese - legittima la inderogabile esigenza di un regime repubblicano, nel quale le libertà civili e politiche dovranno essere affermate e difese con il presidio di tutte le misure atte ad impedire che esse possano diventare strumento di partiti e di gruppi, che della libertà si avvalgano con il proposito di distruggerla. In base ad una rinnovata separazione dei poteri, il Potere Esecutivo - assiduamente e permanentemente controllato dagli organi rappresentativi che dello Stato repubblicano saranno il fondamento - dovrà godere di autorità e stabilità tali da consentire continuità, efficacia e speditezza di azione, per evitare ogni ritorno a sistemi di crisi permanente, risultati fatali ai regimi parlamentari. Il Potere Giudiziario avrà garanzia di piena indipendenza.</p>
 				<p>2. - Il principio della rappresentanza e del controllo democratico informerà la riorganizzazione degli Enti comunali e Provinciali con estensione ad eventuali raggruppamenti regionali. Mentre si favorirà ai fini di un opportuno decentramento lo sviluppo delle forze autonome di vita locale in armonia alle esigenze economiche, sociali e culturali delle singole regioni, si provvederà ad integrare le deficienze che in queste si rilevassero con il contributo della solidarietà nazionale, in modo da portare le diverse parti del Paese allo stesso grado di benessere e di progresso.</p>
 				<p>3. - I grandi complessi finanziari, industriali e assicurativi, e in genere quante imprese hanno carattere di monopolio e rilevante interesse collettivo, saranno nazionalizzati e gestiti -senza interferenze private - nella varietà di forme più rispondenti alla natura delle imprese stesse e alle esigenze della collettività. Saranno restituite a libertà di iniziativa economica le minori imprese individuali e associative, garantendone le condizioni di sviluppo; e, mentre sarà resa possibile una economia nazionale coordinata, l'intero organismo produttivo sarà liberato dai vincoli soffocanti della polizia economica e tutelato contro i pericoli della burocrazia.</p>
 				<p>4. - Nel campo agrario, in cui l'estrema varietà dell'ambiente fisico e sociale non consente una soluzione uniforme, sarà promossa una radicale riforma, che miri ad immettere sempre più vaste masse di lavoratori nel godimento diretto ed integrale della terra: sia a titolo individuale, là dove esistono le condizioni culturali e tecniche, col frazionamento del latifondo e con la graduale trasformazione dei rapporti di mezzadria e di affittanza; sia a titolo collettivo, con la gestione collettiva delle grandi aziende esistenti e di quelle che sorgeranno per effetto della riforma agraria, e che dovranno essere tutelate con opportune norma legislative. Dovrà essere consolidata la proprietà coltivatrice esistente, e promossa e intensificata in tutte le sue forme di cooperazione, che efficacemente dovrà influire ad elevare le condizioni del lavoratore, sottraendolo al regime salariale, e che esplicherà nel campo della proprietà individuale una funzione integratrice di carattere economico e sociale, consentendo alle aziende l'uso dei mezzi tecnici più progrediti, l'organizzazione dei servizi comuni, l'esercizio delle industrie agricole, e contribuendo a rendere il contadino consapevolmente partecipe della vita politica e sociale. Con questa riforma, con il coordinamento internazionale dell'attività economica, nonché con il perfezionamento della tecnica, potrà riprendere quel processo di specializzazione dell'economia agraria in colture a più alto rendimento, che la politica autarchica ha arrestato e sconvolto.</p>
 				<p>5. - Le organizzazioni sindacali dei lavoratori - restituite a quella libertà che dal diritto stesso di associazione direttamente deriva - dovranno assumere parte essenziale di collaborazione e di responsabilità nel processo produttivo. Si riconoscerà loro a tal fine il diritto di rappresentanza unitaria delle varie categorie; di intervento nello studio e nella soluzione dei problemi inerenti all'economia nazionale, alla legislazione di fabbrica, alla previdenza sociale; e di tutela contrattuale dei rapporti di lavoro. Si assicurerà ai lavoratori la partecipazione agli utili dell'impresa.</p>
 				<p>6. - Verrà assicurata a tutti piena libertà di credenza e di culto. Nei rapporti fra lo Stato e la Chiesa saranno risolti i problemi relativi alla separazione del potere civile da quello religioso nel severo rispetto dei diritti della coscienza e della libertà della Chiesa nell'ambito delle sue funzioni spirituali.</p>
 				<p>7. Nel campo internazionale, compatibilmente con la situazione di fatto che si determinerà alla fine della guerra, sarà portato il massimo contributo alla formazione di una coscienza unitaria europea, premessa indispensabile alla realizzazione auspicata di una federazione europea di liberi paesi democratici nel quadro di una più ampia collaborazione mondiale. Imperiosa e immediata si afferma perciò la necessità di una stretta e continua collaborazione con tutte le democrazie; di una revisione dei rapporti e dei valori internazionali che neghi decisamente il principio della assoluta sovranità statale e sancisca il ripudio di ogni questione meramente territoriale; della costituzione di una comunità giuridica di stati che abbia organi e mezzi adeguati per instaurare ed attuare un regime di sicurezza collettivamente organizzata e di tutela internazionale delle minoranze; di una applicazione più equa e progressiva del mandato coloniale. L'opera della pace dovrà infine permettere ed assicurare una riorganizzazione economica generale secondo i principi della divisione del lavoro, del libero trasferimento delle forze produttive e delle merci, del libero accesso alle fonti delle materie prime.</p></em>
-			
-			<h2 align=center color=#FF4000>L'Italia Libera </h2>
-			<center><img src="img/italialibera.jpg" align=center alt="Il giornale Italia Libera"></center>
-			<p>L'Italia Libera &egrave il giornale ufficiale del Partito d'Azione, nato per diffondere il programma condensato in 'Sette Punti' che i dirigenti della nuova formazione politica considerano come possibile base comune di una larga concentrazione di forze democratiche e antifasciste. I direttori del giornale sono Carlo Levi e Leone Ginzburg.</p>
-			<p>Il primo numero, elaborato da Mario Vinciguerra, Ugo La Malfa e Adolfo Tino, esce a Milano nel gennaio 1943, dopo varie peripezie per sfuggire al rigido controllo della polizia. Ne vengono stampate 3000 copie, distribuite in tutt'Italia.</p>
-			
-			<h2>Esponenti attivi dal Fascismo alla Resistenza</h2>
-			<!--Esponenti-->
-			<div class="row">
-				<!--INIZIO PARRI -->
-				<div class="col-md-2"  style="margin-right:20px;">
-					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">
+
+            <h2 align=center color=#FF4000>L'Italia Libera </h2>
+            <center><img src="img/italialibera.jpg" align=center alt="Il giornale Italia Libera"></center>
+            <p>L'Italia Libera &egrave il giornale ufficiale del Partito d'Azione, nato per diffondere il programma condensato in 'Sette Punti' che i dirigenti della nuova formazione politica considerano come possibile base comune di una larga concentrazione
+                di forze democratiche e antifasciste. I direttori del giornale sono Carlo Levi e Leone Ginzburg.</p>
+            <p>Il primo numero, elaborato da Mario Vinciguerra, Ugo La Malfa e Adolfo Tino, esce a Milano nel gennaio 1943, dopo varie peripezie per sfuggire al rigido controllo della polizia. Ne vengono stampate 3000 copie, distribuite in tutt'Italia.</p>
+
+            <h2>Esponenti attivi dal Fascismo alla Resistenza</h2>
+            <!--Esponenti-->
+            <div class="row">
+                <!--INIZIO PARRI -->
+                <div class="col-md-2" style="margin-right:20px;">
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">
 						<img src="img/parri.jpg"> <br> <br> Ferruccio Parri
 					</button>
 
-					<!-- Modal -->
-					<div class="modal fade" id="myModal1" role="dialog">
-						<div class="modal-dialog">
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal1" role="dialog">
+                        <div class="modal-dialog">
 
-							<!-- Modal content-->
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
-									<h4 class="modal-title">Ferruccio Parri (1890 – 1981)</h4>
-								</div>
-								<div class="modal-body">
-									<div class="row">
-										<div class="col-md-8">
-												<p>Si laurea in lettere e partecipa attivamente alla prima guerra mondiale. Redattore del Corriere della Sera, è costretto ad allontanarsi dal giornale, perché non accetta la svolta fascista del 1925.</p>
-												<p>Entra nel gruppo liberal-socialista di Giustizia e Libertà, l'organizzazione dei fratelli Carlo e Nello Rosselli, organizzando assieme ad altri la fuga all'estero di Filippo Turati e di Sandro Pertini.</p>
-												<p>Arrestato per tale azione, viene condannato prima a dieci mesi di carcere, poi a cinque anni di confino per attività antifasciste.</p>
-												<p>Dopo l'8 settembre con il nome di Maurizio assume la guida del Corpo Volontari della Libertà, il comando unificato di tutte le divisioni partigiane. In seguito partecipa alla creazione del CLNAI e dopo la crisi del III governo Bonomi, tra il giugno ed il novembre del 1945, diviene presidente del consiglio di un governo di unità nazionale composto da democristiani, comunisti, socialisti, azionisti, liberali e demolaburisti. Però i democristiani e i liberali ostacolano la sua azione di governo e ne provocano la caduta a cui segue un nuovo governo guidato dal democristiano Alcide De Gaspari.</p>
-										</div>
-										<div class="col-md-4">
-											<img src="img/parri.jpg" alt="FERRUCCIO PARRI">
-										</div>
-									</div>
-								</div>
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Ferruccio Parri (1890 – 1981)</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <p>Si laurea in lettere e partecipa attivamente alla prima guerra mondiale. Redattore del Corriere della Sera, è costretto ad allontanarsi dal giornale, perché non accetta la svolta fascista del 1925.</p>
+                                            <p>Entra nel gruppo liberal-socialista di Giustizia e Libertà, l'organizzazione dei fratelli Carlo e Nello Rosselli, organizzando assieme ad altri la fuga all'estero di Filippo Turati e di Sandro Pertini.</p>
+                                            <p>Arrestato per tale azione, viene condannato prima a dieci mesi di carcere, poi a cinque anni di confino per attività antifasciste.</p>
+                                            <p>Dopo l'8 settembre con il nome di Maurizio assume la guida del Corpo Volontari della Libertà, il comando unificato di tutte le divisioni partigiane. In seguito partecipa alla creazione del CLNAI e dopo la crisi
+                                                del III governo Bonomi, tra il giugno ed il novembre del 1945, diviene presidente del consiglio di un governo di unità nazionale composto da democristiani, comunisti, socialisti, azionisti, liberali e demolaburisti.
+                                                Però i democristiani e i liberali ostacolano la sua azione di governo e ne provocano la caduta a cui segue un nuovo governo guidato dal democristiano Alcide De Gaspari.</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="img/parri.jpg" alt="FERRUCCIO PARRI">
+                                        </div>
+                                    </div>
+                                </div>
 
-								<div class="modal-footer">
-									<button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
-								</div>
-							</div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+                                </div>
+                            </div>
 
-						</div>
-					</div>
+                        </div>
+                    </div>
 
-				</div>
-				<!--Inizio Malfa-->
-				<div class="col-md-2"  style="margin-right:20px;">
+                </div>
+                <!--Inizio Malfa-->
+                <div class="col-md-2" style="margin-right:20px;">
 
-					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">
 						<img src="img/lamalfa_resize.png"> <br> <br> Ugo La Malfa
 					</button>
 
-					<!-- Modal -->
-					<div class="modal fade" id="myModal2" role="dialog">
-						<div class="modal-dialog">
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal2" role="dialog">
+                        <div class="modal-dialog">
 
-							<!-- Modal content-->
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
-									<h4 class="modal-title">Ugo La Malfa(1903 - 1979)</h4>
-								</div>
-								<div class="modal-body">
-									<div class="row">
-										<div class="col-md-8">
-											<p>L'esordio pubblico di Ugo La Malfa &egrave un intervento al convegno dell'Unione Democratica Nazionale che si svolge a Roma tra il 14 e il 16 giugno 1925. Amendola lo include nella ristretta "pentarchia", la direzione dell'Unione Democratica, incaricata di organizzare l'opposizione al fascismo. 	</p>
-											<p>Nel 1926 Ugo La Malfa &egrave espulso per antifascismo dal Corso Allievi Ufficiali di Complemento. Nel 1928 viene arrestato e condannato a tre mesi di carcere per avere cercato di dare vita a una organizzazione illegale. Questi precedenti non gli impediscono di entrare, nel 1930, in uno dei "santuari" del regime, l'Istituto della Enciclopedia Treccani diretta da Giovanni Gentile.</p>
-											<p>All'inizio del 1943, La Malfa &egrave costretto a fuggire per sottrarsi all'arresto, che gi&agrave ha colpito molti suoi collaboratori nel Partito d'Azione. Si rifugia a Bergamo, quindi si reca a Berna, dove lo aspetta un incontro decisivo: il suo interlocutore &egrave Allen Dulles, responsabile dell'Office of Strategic Services. Con il suo aiuto espatria in Francia e di qui a Londra.</p>
-											<p>Dopo l'8 settembre, diventa uno dei massimi rappresentanti del <em>Partito d'Azione</em> e della Resistenza.</p>
-											<p>Nel <em>PdA</em>, con Calamandrei e Parri, rappresenta l'ala liberal-democratica e anglofila che si contrappone alla corrente filosocialista di Emilio Lussu e Riccardo Lombardi.</p>
-											<p>L'8 giugno del 1944, quattro giorni dopo la liberazione di Roma, partecipa alla prima riunione non clandestina del CLN, al Grand Hotel. Accanto a Badoglio, affiancato da due suoi ministri, Croce e Togliatti, siedono quel giorno tutti i protagonisti del CLN: La Malfa, Bonomi, Ruini, Nenni, Scoccimarro, Casati, De Gasperi, e il segretario Fenoaltea.</p>
-											<p>Nel governo Parri (1945) viene nominato Ministro dei Trasporti e in questa veste d&agrave un significativo impulso alla ricostruzione delle pi&ugrave importanti arterie ferroviarie e stradali del Paese.</p>
-										</div>
-										<div class="col-md-4">
-											<img src="img/lamalfa_resize.png" alt="UGO LA MALFA">
-										</div>
-									</div>
-								</div>
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Ugo La Malfa(1903 - 1979)</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <p>L'esordio pubblico di Ugo La Malfa &egrave un intervento al convegno dell'Unione Democratica Nazionale che si svolge a Roma tra il 14 e il 16 giugno 1925. Amendola lo include nella ristretta "pentarchia", la
+                                                direzione dell'Unione Democratica, incaricata di organizzare l'opposizione al fascismo. </p>
+                                            <p>Nel 1926 Ugo La Malfa &egrave espulso per antifascismo dal Corso Allievi Ufficiali di Complemento. Nel 1928 viene arrestato e condannato a tre mesi di carcere per avere cercato di dare vita a una organizzazione
+                                                illegale. Questi precedenti non gli impediscono di entrare, nel 1930, in uno dei "santuari" del regime, l'Istituto della Enciclopedia Treccani diretta da Giovanni Gentile.</p>
+                                            <p>All'inizio del 1943, La Malfa &egrave costretto a fuggire per sottrarsi all'arresto, che gi&agrave ha colpito molti suoi collaboratori nel Partito d'Azione. Si rifugia a Bergamo, quindi si reca a Berna, dove
+                                                lo aspetta un incontro decisivo: il suo interlocutore &egrave Allen Dulles, responsabile dell'Office of Strategic Services. Con il suo aiuto espatria in Francia e di qui a Londra.</p>
+                                            <p>Dopo l'8 settembre, diventa uno dei massimi rappresentanti del <em>Partito d'Azione</em> e della Resistenza.</p>
+                                            <p>Nel <em>PdA</em>, con Calamandrei e Parri, rappresenta l'ala liberal-democratica e anglofila che si contrappone alla corrente filosocialista di Emilio Lussu e Riccardo Lombardi.</p>
+                                            <p>L'8 giugno del 1944, quattro giorni dopo la liberazione di Roma, partecipa alla prima riunione non clandestina del CLN, al Grand Hotel. Accanto a Badoglio, affiancato da due suoi ministri, Croce e Togliatti,
+                                                siedono quel giorno tutti i protagonisti del CLN: La Malfa, Bonomi, Ruini, Nenni, Scoccimarro, Casati, De Gasperi, e il segretario Fenoaltea.</p>
+                                            <p>Nel governo Parri (1945) viene nominato Ministro dei Trasporti e in questa veste d&agrave un significativo impulso alla ricostruzione delle pi&ugrave importanti arterie ferroviarie e stradali del Paese.</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="img/lamalfa_resize.png" alt="UGO LA MALFA">
+                                        </div>
+                                    </div>
+                                </div>
 
-								<div class="modal-footer">
-									<button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
-								</div>
-							</div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+                                </div>
+                            </div>
 
-						</div>
-					</div>
-				</div>
-			</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		<footer>
-			<div class="navbar navbar-fixed-bottom" style="opacity:0.9;">
-				<div class="last-div" style="font-size:90%;">
-					<div class='col-md-12' style="text-align:right">
-						<a style="color:#b4b4b4"> ITT Chilesotti &emsp; </a>
-						<a style="color:#b4b4b4"> Via Dei Tigli, 10 - 36016 Thiene &emsp; </a>
-						<a style="color:#b4b4b4"> Tel 0445 361773 &emsp;</a>
-						<a style="color:#b4b4b4"> E-mail: itt@chilesotti.it &emsp; </a>
-						<a style="color:#b4b4b4"> PEC: vitf06000A@pec.istruzione.it &emsp;</a>
-					</div>
-				</div>
-		</footer>
+            <footer>
+                <div class="navbar navbar-fixed-bottom" style="opacity:0.9;">
+                    <div class="last-div" style="font-size:90%;">
+                        <div class='col-md-12' style="text-align:right">
+                            <a style="color:#b4b4b4"> ITT Chilesotti &emsp; </a>
+                            <a style="color:#b4b4b4"> Via Dei Tigli, 10 - 36016 Thiene &emsp; </a>
+                            <a style="color:#b4b4b4"> Tel 0445 361773 &emsp;</a>
+                            <a style="color:#b4b4b4"> E-mail: itt@chilesotti.it &emsp; </a>
+                            <a style="color:#b4b4b4"> PEC: vitf06000A@pec.istruzione.it &emsp;</a>
+                        </div>
+                    </div>
+            </footer>
 
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="js/jquery-2.1.1.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/wow.min.js"></script>
-		<script src="js/jquery.easing.1.3.js"></script>
-		<script src="js/jquery.isotope.min.js"></script>
-		<script src="js/jquery.bxslider.min.js"></script>
-		<script type="text/javascript" src="js/fliplightbox.min.js"></script>
-		<script src="js/functions.js"></script>
-		<script type="text/javascript">
-			$('.portfolio').flipLightBox()
-		</script>
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="js/jquery-2.1.1.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/wow.min.js"></script>
+            <script src="js/jquery.easing.1.3.js"></script>
+            <script src="js/jquery.isotope.min.js"></script>
+            <script src="js/jquery.bxslider.min.js"></script>
+            <script type="text/javascript" src="js/fliplightbox.min.js"></script>
+            <script src="js/functions.js"></script>
+            <script type="text/javascript">
+                $('.portfolio').flipLightBox()
+            </script>
 </body>
 
 </html>

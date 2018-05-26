@@ -29,95 +29,13 @@
 </head>
 
 <body onload="Inizia()">
-    <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#282119;opacity:0.9;" role="navigation" id="navbar">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                    <span>
-                        <img src="img/logo.png" width="50px" style="margin-bottom:10px" /> Nascita della Costituzione Italiana</span>
-                </a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <div class="menu">
-                    <ul class="nav nav-tabs" role="tablist" style="margin-top:9px;font-size:90%;">
-                        <!--		<li role="presentation" class="active">
-											<a href="index.html">Home</a>
-										</li role="presentation"> -->
-                        <li role="presentation" class="active">
-                            <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-bottom:4%">Home
-                                    <a class="caret"></a>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="index.html">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="chisiamo.html">Chi Siamo</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contatti</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
 
-                        <li>
-                            <div class="dropdown">
-                                <a class="btn btn-primary" role="button" href="resistenza.html" style="margin-bottom:4%">Gli Anni Della Resistenza
-                                </a>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="dropdown">
-                                <a class="btn btn-primary" role="button" href="referendum.html" style="margin-bottom:4%">Dalla Fine della guerra al Referendum
-                                </a>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle active" type="button" data-toggle="dropdown" style="margin-bottom:4%">Assemblea costituente
-                                    <a class="caret"></a>
-                                </button>
-                                <ul class="dropdown-menu">
-                                        <li role="presentation">
-                                            <a href="assemblea.html">Introduzione</a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="emiciclo.html">Emiciclo</a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="dibattito.html">Dibattito Costituzione</a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="articoli.html">Articoli Proposti</a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="famiglia.html">Famiglia</a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="religione.html">Religione</a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="istruzione.html">Istruzione</a>
-                                        </li>
-                                    </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div id="include"></div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        var includeDiv = $("#include");
+        includeDiv.load('navbar.html');
+    </script>
 
     <!-- DA QUA -->
 
@@ -127,10 +45,8 @@
             <h2>Articoli proposti dalle Sottocommisioni</h2>
             <div class="text-center">
                 <h4>Articolo 23</h4>
-                <p>La famiglia è una società naturale: la Repubblica ne riconosce i diritti e ne assume la tutela per l’adempimento
-                    della sua missione e per la saldezza morale e la prosperità della nazione.</p>
-                <p>La Repubblica assicura alla famiglia le condizioni economiche necessarie alla sua formazione, alla sua difesa
-                    ed al suo sviluppo, con speciale riguardo alle famiglie numerose.</p>
+                <p>La famiglia è una società naturale: la Repubblica ne riconosce i diritti e ne assume la tutela per l’adempimento della sua missione e per la saldezza morale e la prosperità della nazione.</p>
+                <p>La Repubblica assicura alla famiglia le condizioni economiche necessarie alla sua formazione, alla sua difesa ed al suo sviluppo, con speciale riguardo alle famiglie numerose.</p>
             </div>
         </div>
     </div>
@@ -139,8 +55,7 @@
             <!--Contenitore Articoli Proposti-->
             <div class="text-center">
                 <h4>Articolo 24</h4>
-                <p>Il matrimonio è basato sull'eguaglianza morale e giuridica dei coniugi. La legge ne regola la condizione
-                    al fine di garantire l’indissolubilità del matrimonio e l’unità della famiglia.</p>
+                <p>Il matrimonio è basato sull'eguaglianza morale e giuridica dei coniugi. La legge ne regola la condizione al fine di garantire l’indissolubilità del matrimonio e l’unità della famiglia.</p>
             </div>
         </div>
     </div>
@@ -149,13 +64,9 @@
             <!--Contenitore Articoli Proposti-->
             <div class="text-center">
                 <h4>Articolo 25</h4>
-                <p>È dovere e diritto dei genitori alimentare, istruire, educare la prole. Nei casi di provata incapacità morale
-                    o economica la Repubblica cura che siano adempiuti tali compiti.</p>
-                <p>I genitori hanno verso i figli nati fuori del matrimonio gli stessi doveri che verso quelli nati nel matrimonio.
-                    La legge garantisce ai figli nati fuori del matrimonio uno stato giuridico che escluda inferiorità civili
-                    e sociali.</p>
-                <p>La Repubblica provvede alla protezione della maternità, dell'infanzia e della gioventù, favorendo ed istituendo
-                    gli organi necessari a tale scopo.</p>
+                <p>È dovere e diritto dei genitori alimentare, istruire, educare la prole. Nei casi di provata incapacità morale o economica la Repubblica cura che siano adempiuti tali compiti.</p>
+                <p>I genitori hanno verso i figli nati fuori del matrimonio gli stessi doveri che verso quelli nati nel matrimonio. La legge garantisce ai figli nati fuori del matrimonio uno stato giuridico che escluda inferiorità civili e sociali.</p>
+                <p>La Repubblica provvede alla protezione della maternità, dell'infanzia e della gioventù, favorendo ed istituendo gli organi necessari a tale scopo.</p>
             </div>
         </div>
     </div>
@@ -164,8 +75,7 @@
             <!--Contenitore Articoli Proposti-->
             <div class="text-center">
                 <h4>Articolo 33</h4>
-                <p>La donna lavoratrice ha gli stessi diritti e, a parità di lavoro, le stesse retribuzioni che spettano al
-                    lavoratore. Le condizioni di lavoro devono consentire l’adempimento della sua essenziale funzione familiare.</p>
+                <p>La donna lavoratrice ha gli stessi diritti e, a parità di lavoro, le stesse retribuzioni che spettano al lavoratore. Le condizioni di lavoro devono consentire l’adempimento della sua essenziale funzione familiare.</p>
             </div>
         </div>
     </div>
@@ -191,8 +101,7 @@
             <div class="text-center">
                 <h4>Articolo 29</h4>
                 <p>La Repubblica riconosce i diritti della famiglia come società naturale fondata sul matrimonio.</p>
-                <p>Il matrimonio è ordinato sull'eguaglianza morale e giuridica dei coniugi, con i limiti stabiliti dalla legge
-                    a garanzia dell'unità familiare.</p>
+                <p>Il matrimonio è ordinato sull'eguaglianza morale e giuridica dei coniugi, con i limiti stabiliti dalla legge a garanzia dell'unità familiare.</p>
             </div>
         </div>
     </div>
@@ -202,8 +111,7 @@
                 <h4>Articolo 30</h4>
                 <p>E' dovere e diritto dei genitori, mantenere, istruire ed educare i figli, anche se nati fuori del matrimonio.</p>
                 <p>Nei casi di incapacità dei genitori, la legge provvede a che siano assolti i loro compiti.</p>
-                <p>La legge assicura ai figli nati fuori dal matrimonio ogni tutela giuridica e sociale, compatibile con i diritti
-                    dei membri della famiglia legittima.</p>
+                <p>La legge assicura ai figli nati fuori dal matrimonio ogni tutela giuridica e sociale, compatibile con i diritti dei membri della famiglia legittima.</p>
                 <p>La legge detta le norme e i limiti per la ricerca della paternità.</p>
             </div>
         </div>
@@ -212,8 +120,7 @@
         <div class="container">
             <div class="text-center">
                 <h4>Articolo 31</h4>
-                <p>La Repubblica agevola con misure economiche e altre provvidenze la formazione della famiglia e l'adempimento
-                    dei compiti relativi, con particolare riguardo alle famiglie numerose.</p>
+                <p>La Repubblica agevola con misure economiche e altre provvidenze la formazione della famiglia e l'adempimento dei compiti relativi, con particolare riguardo alle famiglie numerose.</p>
                 <p>Protegge la maternità, l'infanzia e la gioventù, favorendo gli istituti necessari a tale scopo.</p>
             </div>
         </div>
@@ -222,13 +129,11 @@
         <div class="container" style="margin-bottom:10em">
             <div class="text-center">
                 <h4>Articolo 37</h4>
-                <p>La donna lavoratrice ha gli stessi diritti e, a parità di lavoro, le stesse retribuzioni che spettano al
-                    lavoratore.</p>
-                <p>Le condizioni di lavoro devono consentire l'adempimento della sua essenziale funzione familiare e assicurare
-                    alla madre e al bambino una speciale e adeguata protezione.</p>
+                <p>La donna lavoratrice ha gli stessi diritti e, a parità di lavoro, le stesse retribuzioni che spettano al lavoratore.
+                </p>
+                <p>Le condizioni di lavoro devono consentire l'adempimento della sua essenziale funzione familiare e assicurare alla madre e al bambino una speciale e adeguata protezione.</p>
                 <p>La legge stabilisce il limite minimo di età per il lavoro salariato.</p>
-                <p>La Repubblica tutela il lavoro dei minori con speciali norme e garantisce ad essi, a parità di lavoro, il
-                    diritto alla parità di retribuzione.</p>
+                <p>La Repubblica tutela il lavoro dei minori con speciali norme e garantisce ad essi, a parità di lavoro, il diritto alla parità di retribuzione.</p>
             </div>
         </div>
     </div>

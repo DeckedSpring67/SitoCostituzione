@@ -72,95 +72,12 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top" style="background-color:#282119;opacity:0.9;" role="navigation" id="navbar">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html">
-					<span>
-						<img src="img/logo.png" width="50px" style="margin-bottom:10px" /> Nascita della Costituzione Italiana</span>
-				</a>
-			</div>
-			<div class="navbar-collapse collapse">
-				<div class="menu">
-					<ul class="nav nav-tabs" role="tablist" style="margin-top:9px;font-size:90%;">
-						<!--		<li role="presentation" class="active">
-									<a href="index.html">Home</a>
-								</li role="presentation"> -->
-						<li role="presentation" class="active">
-							<div class="dropdown">
-								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-bottom:4%">Home
-									<a class="caret"></a>
-								</button>
-								<ul class="dropdown-menu">
-									<li>
-										<a href="index.html">Home</a>
-									</li>
-									<li>
-										<a href="chisiamo.html">Chi Siamo</a>
-									</li>
-									<li>
-										<a href="contact.html">Contatti</a>
-									</li>
-								</ul>
-							</div>
-						</li>
-
-						<li>
-							<div class="dropdown">
-								<a class="btn btn-primary" role="button" href="resistenza.html" style="margin-bottom:4%">Gli Anni Della Resistenza
-								</a>
-							</div>
-						</li>
-
-						<li>
-							<div class="dropdown">
-								<a class="btn btn-primary" role="button" href="referendum.html" style="margin-bottom:4%">Dalla Fine della guerra al Referendum
-								</a>
-							</div>
-						</li>
-
-						<li>
-							<div class="dropdown">
-								<button class="btn btn-primary dropdown-toggle active" type="button" data-toggle="dropdown" style="margin-bottom:4%">Assemblea costituente
-									<a class="caret"></a>
-								</button>
-								<ul class="dropdown-menu">
-									<li role="presentation">
-										<a href="assemblea.html">Introduzione</a>
-									</li>
-									<li role="presentation">
-										<a href="emiciclo.html">Emiciclo</a>
-									</li>
-									<li role="presentation">
-										<a href="dibattito.html">Dibattito Costituzione</a>
-									</li>
-									<li role="presentation">
-										<a href="articoli.html">Articoli Proposti</a>
-									</li>
-									<li role="presentation">
-										<a href="famiglia.html">Famiglia</a>
-									</li>
-									<li role="presentation">
-										<a href="religione.html">Religione</a>
-									</li>
-									<li role="presentation">
-										<a href="istruzione.html">Istruzione</a>
-									</li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</nav>
+<div id="include"></div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        var includeDiv = $("#include");
+        includeDiv.load('navbar.html');
+    </script>
 
 	<!-- DA QUA -->
 	<div class="container" style="margin-top:11em;margin-bottom:5em;margin-right:auto;margin-left:auto;">

@@ -45,7 +45,7 @@
                     align: center;
                 }*/
         /* INTRO SECTION ––––––––––––––––––––––––––––––––––––––––––––– */
-
+        
         .intro {
             background: white;
             /*#8d8a85;*/
@@ -66,13 +66,13 @@
                     font-size: 2.5rem;
                 }*/
         /* TIMELINE –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+        
         .timeline ul {
             background: white;
             padding: 0px 0;
             margin-top: 0px;
         }
-
+        
         .timeline ul li {
             list-style-type: none;
             position: relative;
@@ -82,7 +82,7 @@
             background: #282119;
             ;
         }
-
+        
         .timeline ul li::after {
             content: '';
             position: absolute;
@@ -94,7 +94,7 @@
             border-radius: 50%;
             background: inherit;
         }
-
+        
         .timeline ul li div {
             position: relative;
             bottom: 0;
@@ -103,7 +103,7 @@
             background: #3a3a3a;
             /*#282119;*/
         }
-
+        
         .timeline ul li div::before {
             content: '';
             position: absolute;
@@ -112,21 +112,20 @@
             height: 0;
             border-style: solid;
         }
-
-
+        
         .timeline li time {
             color: inherit;
         }
-
+        
         .timeline li {
             color: #ebebeb;
         }
-
+        
         .timeline ul li:nth-child(odd) div {
             top: 33px;
             left: 45px;
         }
-
+        
         .btn-default:hover,
         .btn-default:focus,
         .btn-default.focus,
@@ -137,7 +136,7 @@
             background-color: #b4b4b4!important;
             border-color: #b4b4b4;
         }
-
+        
         .btn-default:nth-child(odd):hover::before,
         .btn-default:nth-child(odd):focus::before,
         .btn-default:nth-child(odd).focus::before,
@@ -147,7 +146,7 @@
             color: #e6e6e6!important;
             border-color: transparent #b4b4b4 transparent transparent!important;
         }
-
+        
         .btn-default:nth-child(odd):hover::after,
         .btn-default:nth-child(odd):focus::after,
         .btn-default:nth-child(odd).focus::after,
@@ -157,24 +156,24 @@
             color: #e6e6e6!important;
             border-color: transparent #b4b4b4 transparent transparent!important;
         }
-
+        
         .timeline ul li:nth-child(odd) div::before {
             left: -15px;
             border-width: 8px 16px 8px 0;
             border-color: transparent #3a3a3a transparent transparent;
         }
-
+        
         .timeline ul li:nth-child(even) div {
             top: 33px;
             left: -439px;
         }
-
+        
         .timeline ul li:nth-child(even) div::before {
             right: -15px;
             border-width: 8px 0 8px 16px;
             border-color: transparent transparent transparent #3a3a3a;
         }
-
+        
         time {
             display: block;
             font-size: 1.2rem;
@@ -184,29 +183,29 @@
         }
         /* EFFECTS
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+        
         .timeline ul li::after {
             transition: background .5s ease-in-out;
         }
-
+        
         .timeline ul li.in-view::after {
             background: #282119;
         }
-
+        
         .timeline ul li div {
             visibility: hidden;
             opacity: 0;
             transition: all .5s ease-in-out;
         }
-
+        
         .timeline ul li:nth-child(odd) div {
             transform: translate3d(200px, 0, 0);
         }
-
+        
         .timeline ul li:nth-child(even) div {
             transform: translate3d(-200px, 0, 0);
         }
-
+        
         .timeline ul li.in-view div {
             transform: none;
             visibility: visible;
@@ -214,31 +213,27 @@
         }
         /* GENERAL MEDIA QUERIES
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+        
         @media screen and (max-width: 900px) {
             .timeline ul li div {
                 width: 250px;
             }
-
             .timeline ul li:nth-child(even) div {
                 left: -289px;
                 /*250+45-6*/
             }
         }
-
+        
         @media screen and (max-width: 600px) {
             .timeline ul li {
                 margin-left: 20px;
             }
-
             .timeline ul li div {
                 width: calc(100vw - 91px);
             }
-
             .timeline ul li:nth-child(even) div {
                 left: 45px;
             }
-
             .timeline ul li:nth-child(even) div::before {
                 left: -15px;
                 border-width: 8px 16px 8px 0;
@@ -249,96 +244,12 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#282119;opacity:0.9;" role="navigation" id="navbar">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                    <span>
-                        <img src="img/logo.png" width="50px" style="margin-bottom:0.625em" /> Nascita della Costituzione Italiana</span>
-                </a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <div class="menu">
-                    <ul class="nav nav-tabs" role="tablist" style="margin-top:9px;font-size:90%;">
-                        <!--		<li role="presentation" class="active">
-											<a href="index.html">Home</a>
-										</li role="presentation"> -->
-                        <li role="presentation">
-                            <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-bottom:4%">Home
-                                    <a class="caret"></a>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="index.html">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="chisiamo.html">Chi Siamo</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contatti</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="dropdown">
-                                <a class="btn btn-primary" role="button" href="resistenza.html" style="margin-bottom:4%">Gli Anni Della Resistenza
-                                </a>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="dropdown">
-                                <a class="btn btn-primary active" role="button" href="referendum.html" style="margin-bottom:4%">Dalla Fine della guerra al Referendum
-                                </a>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-bottom:4%">Assemblea costituente
-                                    <a class="caret"></a>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li role="presentation">
-                                        <a href="assemblea.html">Introduzione</a>
-                                    </li>
-                                    <li role="presentation">
-                                        <a href="emiciclo.html">Emiciclo</a>
-                                    </li>
-                                    <li role="presentation">
-                                        <a href="dibattito.html">Dibattito Costituzione</a>
-                                    </li>
-                                    <li role="presentation">
-                                        <a href="articoli.html">Articoli Proposti</a>
-                                    </li>
-                                    <li role="presentation">
-                                        <a href="famiglia.html">Famiglia</a>
-                                    </li>
-                                    <li role="presentation">
-                                        <a href="religione.html">Religione</a>
-                                    </li>
-                                    <li role="presentation">
-                                        <a href="istruzione.html">Istruzione</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-
+    <div id="include"></div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        var includeDiv = $("#include");
+        includeDiv.load('navbar.html');
+    </script>
     <!-- Da qui -->
     <div class="container-fluid" style="margin-top:12em;margin-bottom:6em;">
         <div class="timeline wow fadeIn" data-wow-offset="0" data-wow-delay="0.2s">
