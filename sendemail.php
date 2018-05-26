@@ -1,7 +1,7 @@
 <?php 
 
 // L'INDIRIZZO DEL DESTINATARIO DELLA MAIL 
-$to = "agramola@chilesotti.it"; 
+$to = "mmartini@chilesotti.it"; 
 $nome= $_POST["nome"];
 // IL SOGGETTO DELLA MAIL 
 $subject = "Messaggio da ".$nome. " dal sito della Costituzione"; 
