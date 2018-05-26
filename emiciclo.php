@@ -6,6 +6,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>La nascita della Costituzione Italiana - Contatti</title>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.isotope.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/fliplightbox.min.js"></script>
+	<script src="js/functions.js"></script>
+	<script type="text/javascript">
+		$('.portfolio').flipLightBox()
+	</script>
 
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -72,12 +85,12 @@
 </head>
 
 <body>
-<div id="include"></div>
-    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript">
-        var includeDiv = $("#include");
-        includeDiv.load('navbar.html');
-    </script>
+	<div id="include"></div>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript">
+		var includeDiv = $("#include");
+		includeDiv.load('navbar.html');
+	</script>
 
 	<!-- DA QUA -->
 	<div class="container" style="margin-top:11em;margin-bottom:5em;margin-right:auto;margin-left:auto;">
@@ -87,10 +100,10 @@
 			<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 			<script type="text/javascript">
 				/************************************
-																													Developed by: 5C/5D
-																													Emilio Crosariol
-																													Davide Albiero
-																												 ************************************/
+																																	Developed by: 5C/5D
+																																	Emilio Crosariol
+																																	Davide Albiero
+																																 ************************************/
 				//definizione variabili per mobile
 				var dotsize = Math.ceil((screen.width * 0.26) / 100);
 				var dotsizebig = Math.ceil((screen.width * 0.416) / 100);
@@ -656,9 +669,10 @@
 	</div>
 	<div class="container-fluid">
 		<center>
-		<div class="alert alert-info" id="info">
-  		  <strong>Info!</strong><span id="BrowserEdge">  </span>
-  		</div>
+			<div class="alert alert-info" id="info">
+				<strong>Info!</strong>
+				<span id="BrowserEdge"> </span>
+			</div>
 	</div>
 	<script>
 		var dispositivo = navigator.userAgent;
@@ -677,8 +691,7 @@
 					"Alcune animazioni potrebbero non funzionare correttamente, per una migliore visione, usare un browser basato su Chromium Versione 63+"
 				);
 				paragraph.appendChild(text);
-			}
-			else{
+			} else {
 				var paragraph = document.getElementById("info");
 				paragraph.hidden = true;
 			}
@@ -760,19 +773,6 @@
 				</div>
 			</div>
 	</footer>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="js/jquery-2.1.1.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.isotope.min.js"></script>
-	<script src="js/jquery.bxslider.min.js"></script>
-	<script type="text/javascript" src="js/fliplightbox.min.js"></script>
-	<script src="js/functions.js"></script>
-	<script type="text/javascript">
-		$('.portfolio').flipLightBox()
-	</script>
 </body>
 
 </html>
